@@ -1,0 +1,139 @@
+.list{
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 50px;
+    transition: .3s;
+
+    &:hover{
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.7);
+        transform: scale(103%);
+        background-color: rgb(24, 24, 24);
+    }
+
+    .list-img{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .list-context{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h3{
+            width: 150px;
+            text-align: center;
+        }
+
+        a{
+            width: 200px;
+            text-align: center;
+            color: rgb(83, 166, 249);
+        }
+
+        button{
+            text-align: center;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: dodgerblue;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .list{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .list{
+        width: 100%;
+
+
+        .list-img{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .list{
+        width: 100%;
+        gap: 10px;
+        justify-content: start;
+
+
+        .list-img{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .list{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .list-context{
+            // width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .list-img{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+}
